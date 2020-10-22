@@ -8,7 +8,8 @@ export default function Intro({navigation}) {
         <Button
           title="Go to Profile"
           onPress={() => navigation.navigate('VR', {
-              scene: './js/ViroMediaPlayer/ViroTheatre'
+              scene: "../../js/ViroMediaPlayer/ViroTheatre",
+              enabled: false
           })}
         />
       </View>

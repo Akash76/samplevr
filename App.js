@@ -10,9 +10,9 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="VR">
+      <Stack.Navigator initialRouteName="Intro">
         <Stack.Screen name="Intro" component={Intro} />
-        <Stack.Screen name="VR" component={VRScene} />
+        <Stack.Screen options={{headerShown: false}} name="VR" component={VRScene} />
       </Stack.Navigator>
     </NavigationContainer>
   )
