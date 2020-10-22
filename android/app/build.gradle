@@ -91,7 +91,7 @@ project.ext.react = [
  * Upload all the APKs to the Play Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
-def enableSeparateBuildPerCPUArchitecture = false
+def enableSeparateBuildPerCPUArchitecture = true
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
@@ -124,8 +124,6 @@ android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
     flavorDimensions "platform"
-    buildToolsVersion '28.0.3'
-    flavorDimensions "platform"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -136,7 +134,6 @@ android {
         applicationId "com.samplevr"
         minSdkVersion 23
         targetSdkVersion 28
-        multiDexEnabled true
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
@@ -211,11 +208,6 @@ dependencies {
     implementation project(path: ':react_viro')
     implementation 'com.google.android.exoplayer:exoplayer:2.7.1'
     implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
-    implementation 'com.amazonaws:aws-android-sdk-core:2.7.7'
-    implementation 'com.amazonaws:aws-android-sdk-ddb:2.7.7'
-    implementation 'com.amazonaws:aws-android-sdk-ddb-mapper:2.7.7'
-    implementation 'com.amazonaws:aws-android-sdk-cognito:2.7.7'
-    implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.7.7'
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 

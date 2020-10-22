@@ -20,7 +20,7 @@ import {
   ViroNode,
   ViroAnimations,
   ViroUtils,
-} from 'react-viro';
+} from '@akadrimer/react-viro';
 
 var createReactClass = require('create-react-class');
 
