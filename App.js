@@ -7,14 +7,6 @@ import Intro from './screens/Intro.js'
 
 const Stack = createStackNavigator();
 
-// const App = () => {
-//   const scene = require('./js/HelloWorld/HelloWorldScene')
-//   // const scene = require('./js/ViroMediaPlayer/ViroTheatre')
-//   return (
-//     <VRScene scene={scene}/>
-//   )
-// };
-
 const App = () => {
   return (
     <NavigationContainer>

@@ -1,20 +1,18 @@
 import React from 'react'
 import {
     ViroVRSceneNavigator,
-} from 'react-viro';
+} from '@akadrimer/react-viro';
+
+import ViroTeathre from '../../js/ViroMediaPlayer/ViroTheatre';
   
 
 export default function VRScene({scene}) {
-    var scene = <ViroVRSceneNavigator
-                initialScene={{
-                  scene: scene,
-                }}
-                vrModeEnabled={false}
-                />
-
     return (
-        <>
-        {scene}
-        </>
+        <ViroVRSceneNavigator
+            initialScene={{
+                scene: ViroTeathre,
+            }}
+            vrModeEnabled={false}
+        />
     )
 }
